@@ -1,0 +1,28 @@
+<p>admin works!</p>
+<ul><li><a routerLink="admin-photos">Photos</a></li>
+    <li><a routerLink="admin-posts">Posts</a></li>
+    </ul>
+    <ul>
+      <li><a [routerLink]="'admins'">Todos</a></li>
+      <li><a [routerLink]="'todos'">Todos List</a></li>
+    </ul>
+
+        
+<router-outlet></router-outlet>
+<table>
+    <tr>
+      <th>UserId</th>
+      <th>Id</th>
+      <th>TItle</th>
+    </tr>
+    <tr *ngFor="let data of allList">
+      <td>{{data.userId}}</td>
+      <td>{{data.id}}</td>
+      <td>{{data.title}}</td>
+    </tr>
+    <tr>
+      
+    </tr>
+  </table>
+
+ 
